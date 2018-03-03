@@ -70,12 +70,14 @@ export default {
 <style lang="stylus" scoped>
 section 
     text-align center
-     width 600px
+    margin 0 auto 
+    width 60%auto
     input
-        width 100%
+        width 60%
         margin 0 auto
         height 50px
         text-indent 20px
         font-size 20px
         border 0
+
 </style>

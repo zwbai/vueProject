@@ -48,7 +48,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
     .helper
-        width 100%
+        width 60%
         height 40px
         line-height 40px
         margin 0 auto 
