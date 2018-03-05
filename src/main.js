@@ -3,13 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import About from './about'
+import Support from './support'
+import Talk from './talk'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+const root = document.createElement('div')
+document.body.appendChild(root)
+
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
-})
+  render: h=> h(App)
+}).$mount(root)
+

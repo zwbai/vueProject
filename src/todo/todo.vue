@@ -70,8 +70,12 @@ export default {
 <style lang="stylus" scoped>
 section 
     text-align center
-    margin 0 auto 
+    // margin 0 auto 
     width 60%auto
+    // box-shadow: 0px 0px 5px #888888;
+    // background-color:#FAFAFA;
+    filter: none !important;
+    margin: 0.5em 0;
     input
         width 60%
         margin 0 auto
