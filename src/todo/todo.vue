@@ -77,7 +77,7 @@ section
     filter: none !important;
     margin: 0.5em 0;
     input
-        width 60%
+        width 60%           
         margin 0 auto
         height 50px
         text-indent 20px

@@ -11,7 +11,11 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 const root = document.createElement('div')
-document.body.appendChild(root)
+document.body.appendChild(root)   
+
+Vue.prototype.$goRoute = function (index) {
+  this.$router.push(index)
+}
 
 new Vue({
   el: '#app',

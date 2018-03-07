@@ -3,7 +3,6 @@
         <div class="cover bg"></div>
             <homenav></homenav>
             <Header></Header>
-            
             <todo></todo>
             <Footer></Footer>
         <div>
@@ -29,7 +28,29 @@ export default{
         },
     data(){
         return {
-            test:'abcdef'
+            links: [
+                {
+                    text: '/',
+                    route: '/App'
+
+                },
+                {
+                    text: '主页',
+                    route: '/home'
+                },
+                {
+                    text: '赞助',
+                    route: '/support'
+                },
+                {
+                    text: '大家说',
+                    route: '/talk'
+                },
+                {
+                    text: 'About',
+                    route: '/talk'
+                }
+            ]
         }
     }
 }
