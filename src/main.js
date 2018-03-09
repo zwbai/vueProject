@@ -14,6 +14,7 @@ const root = document.createElement('div')
 document.body.appendChild(root)   
 
 Vue.prototype.$goRoute = function (index) {
+  console.log(index),
   this.$router.push(index)
 }
 

@@ -6,9 +6,6 @@
             <todo></todo>
             <Footer></Footer>
         <div>
-            <router-link to="/support">support</router-link>
-            <router-link to="/about">About</router-link>
-            <router-view></router-view>
         </div>
     </div>
 </template>
@@ -27,30 +24,8 @@ export default{
         Todo,
         },
     data(){
-        return {
-            links: [
-                {
-                    text: '/',
-                    route: '/App'
+        return{
 
-                },
-                {
-                    text: '主页',
-                    route: '/home'
-                },
-                {
-                    text: '赞助',
-                    route: '/support'
-                },
-                {
-                    text: '大家说',
-                    route: '/talk'
-                },
-                {
-                    text: 'About',
-                    route: '/talk'
-                }
-            ]
         }
     }
 }

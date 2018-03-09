@@ -17,18 +17,22 @@ Vue.use(VueRouter);
 const routers = [
     { 
         path:"/talk", 
+        name:'Talk',
         componet: Talk 
     },
     { 
         path:"/about",
+        name:'About',
         componet: About 
     },
     { 
         path:"/support",
+        name:'support',
         componet: Support 
     },
     {
         path: '/',
+        name:'App',
         redirct:'/App'
     }
 

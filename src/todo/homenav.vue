@@ -1,15 +1,13 @@
 <template>
   <nav id="home-nav">
       <ul>
-            <li>北麦课思</li>
-            <li>大家说</li>
-            <li>关于我们</li>
-            <li>加入我们</li>
             <li v-for="item in links">
                 <a @click="$goRoute(item.route)">
                     {{item.text}}
                 </a>
             </li>
+            <router-view></router-view>
+
       </ul>
       
   </nav>
@@ -17,8 +15,34 @@
 
 <script>
 export default {
-    
-}
+    data() {
+        return {
+            links: [
+                // {
+                //     text: '/',
+                //     route: '/App'
+
+                // },
+                {
+                    text: '主页',
+                    route: '/home'
+                },
+                {
+                    text: '赞助',
+                    route: '/support'
+                },
+                {
+                    text: '大家说',
+                    route: '/talk'
+                },
+                {
+                    text: 'About',
+                    route: '/about'
+                }
+            ]
+        }
+    }
+    }
 </script>
 
 
@@ -37,6 +61,7 @@ export default {
         width 100%
         li 
             display inline-block
+            margin-left 10px
 
 
 </style>
